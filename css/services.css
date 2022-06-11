@@ -482,7 +482,7 @@
     .services-list__icon {
         width: 64px;
         height: 64px;
-        margin-right: 24px;
+        margin-right: 5px;
         margin-bottom: 4px;
     }
     .services-list__icon:last-child {
@@ -546,6 +546,8 @@
 @media all and (max-width: 533px) {
     .bottom-banner {
         height: 198px;
+        background: url(../images/bgimage2.jpg);
+        background-size: cover;
     }
     .bottom-banner__text {
         display: none;
@@ -567,9 +569,6 @@
     }
 }
 @media all and (max-width: 375px) {
-    .bottom-banner {
-        background: url(../images/bgimage2.jpg);
-    }
     .services-list .link {
         padding: 34px 0 0;
     }
