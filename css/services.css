@@ -358,7 +358,7 @@
         padding: 24px 16px 67px;
     }
     .slider__item__title {
-        font-weight: bolder;
+        font-weight: bold;
         font-size: 18px;
         line-height: 22px;
         padding-bottom: 8px;
@@ -459,7 +459,7 @@
         width: 300px;
     }
     .services-list__heading {
-        font-weight: bolder;
+        font-weight: bold;
         font-size: 18px;
         line-height: 22px;
         padding-bottom: 8px;

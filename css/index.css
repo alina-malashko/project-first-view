@@ -199,7 +199,7 @@
     font-size: 22px;
     line-height: 32px;
     color: #35417F;
-    font-weight: bolder;
+    font-weight: bold;
 }
 .figcaption__text {
     font-size: 18px;
@@ -254,7 +254,7 @@
 .advantages__item__title {
     font-size: 22px;
     line-height: 32px;
-    font-weight: bolder;
+    font-weight: bold;
     padding: 15px 0 10px;
 }
 .advantages__item__text {
@@ -402,7 +402,7 @@
     flex: 0 0 215px;
 }
 .contacts-form__form__note {
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 11px;
     line-height: 20px;
     color: #535670;
@@ -1013,7 +1013,7 @@
     }
     .contacts-form__text p.contacts-form__title {
         padding-bottom: 6px;
-        font-weight: bolder;
+        font-weight: bold;
         font-size: 18px;
         line-height: 22px;
     }

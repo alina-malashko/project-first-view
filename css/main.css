@@ -15,13 +15,6 @@
     font-style: normal;
 }
 @font-face {
-    font-family: 'gotham';
-    src: url('../fonts/Gotham-Book.woff2') format('woff2'),
-         url('../fonts/Gotham-Book.woff') format('woff');
-    font-weight: bolder;
-    font-style: normal;
-}
-@font-face {
     font-family: 'gothamXnarrow';
     src: url('../fonts/GothamXNarrow-Medium.woff2') format('woff2'),
          url('../fonts/GothamXNarrow-Medium.woff') format('woff');
@@ -46,7 +39,7 @@ a {
 .button {
     display: block;
     color: #EEEFF1;
-    font-weight: bolder;
+    font-weight: bold;
     background-color: #1E74EC;
     width: 206px;
     height: 48px;
@@ -568,7 +561,7 @@ input:active {
     flex: 0 0 453px;
 }
 .your-project-form__headline {
-    font-weight: bolder;
+    font-weight: bold;
     color: #535670;
     font-size: 22px;
     line-height: 32px;
@@ -590,7 +583,7 @@ form .button_transparent {
     flex: 0 0 453px;
 }
 .your-project-form__note {
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 11px;
     line-height: 20px;
     color: #535670;
@@ -612,7 +605,7 @@ form .button_transparent {
     color: #535670;
     font-size: 11px;
     line-height: 20px;
-    font-weight: bolder;
+    font-weight: bold;
 }
 .your-project-form__policy a:hover {
     color: #D02F44;
