@@ -11,7 +11,7 @@ $(document).ready(function(){
         waitForAnimate:false,
         responsive:[
             {
-                breakpoint: 1366,
+                breakpoint: 1367,
                 settings: {
                     slidesToShow: 2
                 }
@@ -22,7 +22,7 @@ $(document).ready(function(){
                     slidesToScroll: 1
                 }
             },{
-                breakpoint: 533,
+                breakpoint: 534,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
