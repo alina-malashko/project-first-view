@@ -1123,6 +1123,19 @@ form .button_transparent {
     }
     .label {
         margin: auto;
+        margin-left: -5px;
+    }
+    .label-cinzano {
+        background-position: -255px 0;
+    }
+    .label-vroom {
+        background-position: -993px 0;
+    }
+    .label-actual {
+        background-position: -1240px 0;
+    }
+    .label-atol {
+        background-position: -494px 0;
     }
 }
 @media all and (max-width: 375px) {
