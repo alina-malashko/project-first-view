@@ -134,6 +134,7 @@
     padding: 15px 0 10px;
     font-size: 26px;
     line-height: 32px;
+    color: #1E74EC;
 }
 .development__steps__text {
     font-size: 18px;
@@ -256,6 +257,7 @@
     line-height: 32px;
     font-weight: bold;
     padding: 15px 0 10px;
+    color: #1E74EC;
 }
 .advantages__item__text {
     font-size: 20px;
