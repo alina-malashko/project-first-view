@@ -756,6 +756,7 @@ form .button_transparent {
     nav.open-menu .nav__social-media a {
         padding: 0 0 32px 0;
         flex-basis: 32px;
+        background-image: url(../images/vector4.svg);
     }
     nav.open-menu .nav__social-media a:hover {
         transform: scale(1.2);
