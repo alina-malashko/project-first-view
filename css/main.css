@@ -365,7 +365,7 @@ footer {
     display: block;
     flex: 0 0 32px;
     height: 32px;
-    background: url(../images/social.png) 0 0 no-repeat;
+    background: url(../images/social.svg) 0 0 no-repeat;
 }
 .links-icons a:nth-child(2) {
     background-position: -72px 0;
