@@ -20,6 +20,7 @@
     font-style: normal;
 }
 
+/*Стили общие для всех страниц*/
 body {
     font-family: 'gotham',  sans-serif;
     max-width: 1920px;
@@ -47,6 +48,8 @@ a {
     line-height: 19.2px;
     box-sizing: border-box;
 }
+
+/*Все кнопки кроме тех, что на баннере*/
 section .button {
     position: relative;
     overflow: hidden;
@@ -72,6 +75,18 @@ section a.button:hover::before {
 section .button:active {
     transform: scale(0.9);
 }
+.button_transparent {
+    background-color: transparent;
+    border: #1E74EC 3px solid;
+    color: #1E74EC;
+    padding-top: 10px;
+}
+.button.button_transparent:hover {
+    background-color: #1E74EC;
+    color: white;
+}
+
+/*Кнопки на баннерах*/
 .banner .button, .bottom-banner .button {
     position: relative;
 }
@@ -113,16 +128,8 @@ section .button:active {
         transform: translateY(0px);
     }
 }
-.button_transparent {
-    background-color: transparent;
-    border: #1E74EC 3px solid;
-    color: #1E74EC;
-    padding-top: 10px;
-}
-.button.button_transparent:hover {
-    background-color: #1E74EC;
-    color: white;
-}
+
+/*Стили для содержимого header*/
 header {
     color: #DDDDE2;
     width: 1440px;
@@ -146,7 +153,7 @@ header {
 }
 .logo__headline {
     font-size: 24px;
-    font-family: Inter, sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
     line-height: 26px;
     padding-top: 14px;
@@ -155,7 +162,7 @@ header {
     color: #989AA9;
     font-size: 15px;
     line-height: 18px;
-    font-family: Inter, sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     padding-top: 8px;
     padding-bottom: 14px;
@@ -170,7 +177,6 @@ nav ul {
     font-size: 0;
 }
 nav li {
-    list-style-type: none;
     display: inline-block;
     text-transform: uppercase;
 }
@@ -222,6 +228,8 @@ nav a:active {
 .nav__social-media {
     display: none;
 }
+
+/*Верхний и нижний баннеры*/
 .banner__content {
     margin: auto;
     width: 1440px;
@@ -238,7 +246,7 @@ nav a:active {
     color: #EEEFF1;
 }
 .banner__text {
-    font-family: Rubik, sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
@@ -260,6 +268,8 @@ nav a:active {
     font-weight: bold;
     color: #EEEFF1;
 }
+
+/*Стили для footer*/
 footer {
     background-color: #03115F;
     width: 100%;
@@ -287,7 +297,6 @@ footer {
     padding-left: 0;
 }
 .nav li, .social-media li {
-    list-style-type: none;
     display: block;
     text-transform: uppercase;
     padding-bottom: 15px;
@@ -332,7 +341,6 @@ footer {
 }
 .policy li {
     display: inline-block;
-    list-style-type: none;
     font-weight: bold;
 }
 .policy li a {
@@ -365,18 +373,21 @@ footer {
     display: block;
     flex: 0 0 32px;
     height: 32px;
-    background: url(../images/social.png) 0 0 no-repeat;
+    background: url(../images/social.png) no-repeat;
 }
-.links-icons a:nth-child(2) {
+.links-icons .linkedin {
+    background-position: 0 0;
+}
+.links-icons .google {
     background-position: -72px 0;
 }
-.links-icons a:nth-child(3) {
+.links-icons .facebook {
     background-position: -144px 0;
 }
-.links-icons a:nth-child(4) {
+.links-icons .dribbble {
     background-position: -216px 0;
 }
-.links-icons a:nth-child(5) {
+.links-icons .instagram {
     background-position: -288px 0;
 }
 footer a:hover {
@@ -402,6 +413,8 @@ footer .links-icons a:active {
     display: block;
     clear: both;
 }
+
+/*Секция clients общая для index и portfolio*/
 .clients {
     width: 1440px;
 }
@@ -442,6 +455,8 @@ footer .links-icons a:active {
 .label:hover {
     transform: scale(0.8);
 }
+
+/*Ссылка с псевдоэлементом для страниц index и services*/
 .link {
     font-size: 14px;
     line-height: 16px;
@@ -465,6 +480,8 @@ footer .links-icons a:active {
 .link:active {
     color: transparent;
 }
+
+/*Общие для всех секций заголовки*/
 .section__heading {
     color: #35417F;
     font-size: 26px;
@@ -478,6 +495,8 @@ footer .links-icons a:active {
     color: #03115F;
     padding-bottom: 24px;
 }
+
+/*Элементы форм*/
 input {
     font-family: 'gotham',  sans-serif;
     margin-bottom: 15px;
@@ -528,6 +547,8 @@ input:hover {
 input:active {
     box-shadow: inset 1px 1px 5px #709af8, inset 1px 1px 5px #989AA9;
 }
+
+/*Форма общая для services и career*/
 .your-project-form {
     position: relative;
     margin-bottom: 110px;
@@ -608,6 +629,12 @@ form .button_transparent {
 .policy-link {
     color: #A960AB;
     text-decoration: underline;
+}
+.policy-link:hover {
+    color: #D02F44;
+}
+.policy-link:active {
+    color: #1E74EC;
 }
 .your-project-form__block:last-of-type {
     border: none;
@@ -690,6 +717,8 @@ form .button_transparent {
         align-items: flex-start;
         width: 90%;
     }
+
+    /*Скрываем меню*/
     nav {
         position: absolute;
         top: 0;
@@ -700,6 +729,8 @@ form .button_transparent {
         visibility: hidden;
         transition: opacity 0.4s ease-in;
     }
+
+    /*Меню, которое будет появляться*/
     nav.open-menu {
         display: flex;
         flex-wrap: wrap;
@@ -708,7 +739,7 @@ form .button_transparent {
         z-index: 2;
     }
     nav.open-menu ul a {
-        font-family: Roboto, sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
@@ -766,6 +797,8 @@ form .button_transparent {
     header .logo {
         order: 0;
     }
+
+    /*Иконка гамбургера*/
     .menu-burger__header {
         position: relative;
         flex-basis: 60px;
@@ -861,6 +894,8 @@ form .button_transparent {
     .your-project-form__text {
         padding-bottom: 16px;
     }
+
+/*Кнопка внутри формы и подпись к ней меняются местами при сужении экрана*/
     .button_move-right {
         margin-top: 8px;
         float: right;
@@ -1029,7 +1064,7 @@ form .button_transparent {
         font-size: 14px;
     }
     .banner__content .button, .bottom-banner__content .button {
-        font-family: Roboto, sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 500;
         font-size: 14px;
         line-height: 16.4px;
@@ -1041,7 +1076,7 @@ form .button_transparent {
         opacity: 0;
     }
     footer {
-        font-family: Roboto, sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 400;
     }
     .team__name {
@@ -1064,25 +1099,25 @@ form .button_transparent {
         padding-top: 198px;
     }
     .your-project-form__text {
-        font-family: Rubik, sans-serif;
+        font-family: 'Rubik', sans-serif;
         font-weight: 400;
         font-size: 12px;
         line-height: 16px;
     }
     input::placeholder {
-        font-family: Roboto, sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 400;
         font-size: 12px;
         line-height: 14px;
     }
     textarea {
-        font-family: Roboto, sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 400;
         font-size: 12px;
         line-height: 14px;
     }
     .button_move-right {
-        font-family: Roboto, sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 500;
         font-size: 14px;
         line-height: 16.4px;
@@ -1091,7 +1126,7 @@ form .button_transparent {
         height: auto;
     }
     .your-project-form__policy {
-        font-family: Roboto, sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 400;
         font-size: 11px;
         line-height: 14px;
@@ -1099,7 +1134,7 @@ form .button_transparent {
     .your-project-form__buttons-wrap .button {
         width: 100%;
         border-radius: 5px;
-        font-family: Roboto, sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 500;
         font-size: 14px;
         line-height: 16.4px;
@@ -1115,9 +1150,6 @@ form .button_transparent {
     }
 }
 @media all and (max-width: 412px) {
-    .links-icons {
-        width: 100%;
-    }
     .clients div.clearfix {
         width: 165px;
     }
@@ -1137,16 +1169,19 @@ form .button_transparent {
     .label-atol {
         background-position: -494px 0;
     }
+    .links-icons {
+        width: 100%;
+    }
 }
 @media all and (max-width: 375px) {
+    .bottom-banner__title {
+        font-size: 24px;
+    }
     footer {
         height: 700px;
     }
     .team {
         flex: 0 0 100%;
         text-align: center;
-    }
-    .bottom-banner__title {
-        font-size: 24px;
     }
 }

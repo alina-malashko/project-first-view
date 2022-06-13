@@ -1,4 +1,5 @@
-.banner {
+/*Стили для index*/
+.banner.main-page__section {
     background: url(../images/bg1.jpg) 50% 50% no-repeat;
     width: 100%;
     height: 1084px;
@@ -20,9 +21,6 @@
     line-height: 28px;
     padding-bottom: 60px;
     width: 570px;
-}
-.clients {
-    margin: 0 auto 180px;
 }
 .stats {
     width: 1440px;
@@ -52,7 +50,7 @@
     width: 1440px;
     margin: 180px auto;
 }
-.section__container {
+.about-us .section__container {
     display: flex;
     justify-content: space-between;
 }
@@ -73,6 +71,8 @@
 .about-us__text:last-of-type {
     padding-bottom: 40px;
 }
+
+/*Стили для кнопок секций portfolio и about-us*/
 .buttons {
     width: 440px;
 }
@@ -165,7 +165,7 @@
     width: 1440px;
     margin: auto;
 }
-.bg {
+.portfolio .bg {
     width: 100%;
     height: 640px;
     position: absolute;
@@ -187,7 +187,7 @@
     line-height: 28px;
     color: #535670;
 }
-.gallery {
+.portfolio .gallery {
     width: 100%;
 }
 .gallery__first-line {
@@ -195,14 +195,14 @@
     display: flex;
     justify-content: space-between;
 }
-.figcaption__title {
+.portfolio .figcaption__title {
     padding: 4px 0 4px;
     font-size: 22px;
     line-height: 32px;
     color: #35417F;
     font-weight: bold;
 }
-.figcaption__text {
+.portfolio .figcaption__text {
     font-size: 18px;
     line-height: 22px;
     color: #535670;
@@ -215,7 +215,7 @@
     display: flex;
     justify-content: space-between;
 }
-.gallery .buttons {
+.portfolio .buttons {
     margin: 64px auto 0;
 }
 .advantages {
@@ -264,7 +264,10 @@
     line-height: 28px;
     color: #535670;
 }
-.bottom-banner__caption {
+.clients.main-page__section {
+    margin: 0 auto 180px;
+}
+.bottom-banner__caption.main-page__section {
     color: #EEEFF1;
     padding: 0 0 15px;
 }
@@ -273,7 +276,7 @@
     margin-bottom: 180px;
     padding-top: 333px;
 }
-.bottom-banner {
+.bottom-banner.main-page__section {
     background: url(../images/bgimage.jpg) 50% 50% no-repeat;
     width: 100%;
     height: 560px;
@@ -281,10 +284,10 @@
     top: 0;
     z-index: -1;
 }
-.bottom-banner__content {
+.bottom-banner__content.main-page__section {
     padding: 110px 0 40px;
 }
-.bottom-banner__title {
+.bottom-banner__title.main-page__section {
     width: 823px;
 }
 .contacts-form_bg {
@@ -421,16 +424,6 @@
     line-height: 20px;
     flex: 0 0 215px;
 }
-.policy-link {
-    color: #A960AB;
-    text-decoration: underline;
-}
-.policy-link:hover {
-    color: #D02F44;
-}
-.policy-link:active {
-    color: #1E74EC;
-}
 .faq {
     width: 1195px;
     margin: 180px auto;
@@ -442,11 +435,11 @@
 .faq .section__heading {
     padding-bottom: 8px;
 }
-.accordion-item {
+.faq__wrapper .accordion-item {
     width: 100%;
     border-bottom: 2px solid #DDDDE2;
 }
-.accordion {
+.faq__wrapper .accordion {
     font-size: 26px;
     line-height: 32px;
     color: #535670;
@@ -459,10 +452,10 @@
     cursor: pointer;
     position: relative;
 }
-.accordion-item:hover {
+.faq__wrapper .accordion-item:hover {
     border-color: #79077B;
 }
-.accordion::after {
+.faq__wrapper .accordion::after {
     content: '+';
     font-size: 38px;
     color: #79077B;
@@ -470,10 +463,10 @@
     top: 35px;
     right: 30px;
 }
-.active::after {
+.faq__wrapper .active::after {
     transform: rotate(45deg);
 }
-.panel {
+.faq__wrapper .panel {
     color: #75788D;
     font-size: 18px;
     line-height: 22px;
@@ -493,7 +486,7 @@
     .about-us {
         width: 90%;
     }
-    .section__container {
+    .about-us .section__container {
         flex-direction: column;
     }
     .about-us__content {
@@ -612,7 +605,7 @@
     .about-us {
         width: 100%;
     }
-    .section__heading {
+    .about-us .section__heading {
         padding-left: 16px;
     }
     .about-us__pic {
@@ -662,7 +655,7 @@
     }
     .offers .link {
         display: block;
-        font-family: Roboto, sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 500;
         padding: 8px 47px;
         color: #1E74EC;
@@ -699,10 +692,10 @@
     .faq__wrapper .panel {
         padding: 0 9px 52px 25px;
     }
-    .bottom-banner__content {
+    .bottom-banner__content.main-page__section {
         padding: 40px 0 72px;
     }
-    .bottom-banner__title {
+    .bottom-banner__title.main-page__section {
         width: 100%;
         font-size: 30px;
         line-height: 32px;
@@ -719,7 +712,7 @@
         width: 330px;
     }
     .contacts-form__adress__item a {
-        font-family: Roboto, sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 400;
         font-size: 11px;
         line-height: 14px;
@@ -747,13 +740,13 @@
     }
 }
 @media all and (max-width: 533px) {
-    .banner {
+    .banner.banner.main-page__section {
         height: 567px;
         background-size: cover;
         position: relative;
     }
     .banner__slogan {
-        font-family: Rubik, sans-serif;
+        font-family: 'Rubik', sans-serif;
         font-weight: 400;
         font-size: 12px;
         line-height: 16px;
@@ -845,7 +838,7 @@
         padding-bottom: 16px;
     }
     .offers__text {
-        font-family: Rubik, sans-serif;
+        font-family: 'Rubik', sans-serif;
         font-weight: 400;
         font-size: 14px;
         line-height: 20px;
@@ -889,7 +882,7 @@
         padding-bottom: 16px;
     }
     .portfolio__text {
-        font-family: Rubik, sans-serif;
+        font-family: 'Rubik', sans-serif;
         font-weight: 400;
         font-size: 12px;
         line-height: 16px;
@@ -917,17 +910,17 @@
         line-height: 16px;
         width: 100%;
     }
-    .gallery .buttons {
+    .portfolio .buttons {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
-    .gallery .buttons a {
+    .portfolio .buttons a {
         width: 100%;
         display: block;
         margin-bottom: 8px;
     }
-    .gallery .button_transparent {
+    .portfolio .button_transparent {
         border: none;
         order: 2;
     }
@@ -968,7 +961,7 @@
     .advantages__item:last-of-type {
         margin-bottom: 0;
     }
-    .clients {
+    .clients.clients.main-page__section {
         margin-bottom: 80px;
     }
     .contacts-form {
