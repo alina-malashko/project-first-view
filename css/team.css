@@ -1,9 +1,16 @@
-.banner {
+/*Стили для team*/
+.banner.team-page__section {
     background: url(../images/Rectangle556.jpg) 50% 50% no-repeat;
     max-width: 100%;
     height: 660px;
 }
-.main {
+.banner__caption.team-page__section {
+    padding: 120px 0 10px;
+}
+.banner__text.team-page__section {
+    padding: 16px 0 156px;
+}
+.team-page {
     width: 1440px;
     margin: 180px auto 218px;
 }
@@ -17,20 +24,20 @@
 .float-block:nth-child(8), .float-block:nth-child(9) {
     margin-bottom: 0;
 }
-.content {
+.team-page .content {
     width: 696px;
     margin-right: 44px;
 }
-figure {
+.team-page figure {
     width: 330px;
     text-align: center;
     transition: all 200ms ease-in;
 }
-figure:hover {
+.team-page figure:hover {
     box-shadow: 2px 5px 15px #5b78a0;
     transform: scale(1.1);
 }
-.content__title {
+.team-page .content__title {
     color: #03115F;
     font-size: 54px;
     line-height: 64px;
@@ -38,17 +45,17 @@ figure:hover {
     margin: 0 0 24px 0;
     font-weight: bold;
 }
-.content p {
+.team-page .content p {
     color: #535670;
     font-size: 20px;
     line-height: 28px;
 }
-.figcaption__text {
+.team-page .figcaption__text {
     color: #535670;
     font-size: 16px;
     line-height: 22px;
 }
-.figcaption__title {
+.team-page .figcaption__title {
     color: #03115F;
     font-weight: bold;
     font-size: 16px;
@@ -56,41 +63,35 @@ figure:hover {
     text-transform: uppercase;
     margin-bottom: 4px;
 }
-figcaption {
+.team-page figcaption {
     margin-top: 16px;
 }
-.bottom-banner {
+.bottom-banner.team-page__section {
     background: url(../images/unsplash_g1Kr4Ozfoac.jpg) 50% 50% no-repeat;
     width: 100%;
     height: 820px;
 }
-.img-container {
+.team-page .img-container {
     position: relative;
     width: 330px;
     height: 330px;
 }
-.linkedin-pic {
+.team-page .linkedin-pic {
     position: absolute;
     top: 24px;
     right: 24px;
 }
-.bottom-banner__content {
+.bottom-banner__content.team-page__section {
     padding: 348px 0 252px;
 }
-.bottom-banner__title {
+.bottom-banner__title.team-page__section {
     margin: 8px 0 64px 0;
-}
-.banner__caption {
-    padding: 120px 0 10px;
-}
-.banner__text {
-    padding: 16px 0 156px;
 }
 .view-more-button a {
     display: none;
 }
 @media all and (max-width: 1536px) {
-    .main {
+    .team-page {
         width: 1070px;
     }
     .float-block:nth-child(3), .float-block:nth-child(7) {
@@ -104,45 +105,45 @@ figcaption {
     .float-block:nth-child(2), .float-block:nth-child(5), .float-block:nth-child(8){
         margin-right: 40px;
     }
-    .main {
+    .team-page {
         width: 740px;
     }
 }
 @media all and (max-width: 800px) {
-    .banner__caption {
+    .banner__caption.team-page__section {
         padding: 80px 0 0;
     }
-    .banner__title {
+    .banner__title.team-page__section {
         padding: 4px 0 0;
     }
-    .banner__text {
+    .banner__text.team-page__section {
         width: 90%;
         padding-bottom: 84px;
     }
-    .banner {
+    .banner.team-page__section {
         height: 436px;
         background-size: cover;
         background-position: 50% 50%;
     }
-    .bottom-banner {
+    .bottom-banner.team-page__section {
         height: 322px;
         background-size: cover;
         background-position: 50% 50%;
     }
-    .bottom-banner__content {
+    .bottom-banner__content.team-page__section {
         padding: 80px 0 64px;
     }
-    .bottom-banner__title {
+    .bottom-banner__title.team-page__section {
         margin: 4px 0 40px;
     }
-    .main {
+    .team-page {
         margin: 80px auto;
         width: 90%;
     }
-    .content {
+    .team-page .content {
         width: 100%;
     }
-    .content__title {
+    .team-page .content__title {
         padding-right: 0;
     }
     .float-block {
@@ -154,46 +155,46 @@ figcaption {
     }
 }
 @media all and (max-width: 600px) {
-    .content__title {
+    .team-page .content__title {
         font-size: 30px;
         line-height: 32px;
         margin-bottom: 16px;
     }
-    .content p {
-        font-family: Rubik, sans-serif;
+    .team-page .content p {
+        font-family: 'Rubik', sans-serif;
         font-weight: 400;
         font-size: 18px;
         line-height: 20px;
     }
 }
 @media all and (max-width: 400px) {
-    .content p {
+    .team-page .content p {
         font-size: 14px;
     }
-    .figcaption__title {
+    .team-page .figcaption__title {
         font-family: Rubik, sans-serif;
         font-weight: 500;
         font-size: 12px;
         line-height: 14px;
     }
-    .figcaption__text {
+    .team-page .figcaption__text {
         font-family: Rubik, sans-serif;
         font-weight: 400;
         font-size: 12px;
         line-height: 16px;
     }
-    figure {
+    .team-page figure {
         width: 90%;
     }
-    .img-container {
+    .team-page .img-container {
         width: 100%;
     }
-    .img-container img:first-child {
+    .team-page .img-container img:first-child {
         width: 100%;
         object-fit: cover;
         height: 330px;
     }
-    figure:nth-child(3), figure:nth-child(4), figure:nth-child(7), figure:nth-child(8) {
+    .team-page figure:nth-child(3), .team-page figure:nth-child(4), .team-page figure:nth-child(7), .team-page figure:nth-child(8) {
         display: none;
     }
     .view-more-button a {
@@ -234,28 +235,28 @@ figcaption {
     .view-more-button a:active {
         transform: scale(0.9);
     }
-    .main {
+    .team-page {
         margin-bottom: 50px;
     }
 }
 @media all and (max-width: 375px) {
-    .bottom-banner {
+    .bottom-banner.team-page__section {
         background: url(../images/bg4.jpg) 50% 50% no-repeat;
         background-size: cover;
     }
-    .bottom-banner__content {
+    .bottom-banner__content.team-page__section {
         text-align: center;
     }
-    .banner {
+    .banner.team-page__section {
         background: url(../images/bg5.jpg) 50% 50% no-repeat;
         background-size: cover;
     }
 }
 @media all and (max-width: 350px) {
-    .banner__text {
+    .banner__text.team-page__section {
         display: none;
     }
-    .content__title {
+    .team-page .content__title {
         font-size: 24px;
     }
 }

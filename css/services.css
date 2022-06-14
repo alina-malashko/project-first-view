@@ -1,21 +1,22 @@
-.banner {
+/*Стили для services*/
+.services-page__section .banner {
     background: url(../images/unsplash_voM1Z9cGPCU.jpg) 50% 50% no-repeat;
     width: 100%;
     height: 660px;
 }
-.banner__text {
+.services-page__section .banner__text {
     padding-bottom: 46px;
 }
-.banner__title {
+.services-page__section .banner__title {
     padding: 10px 0 15px;
 }
-.banner__caption {
+.services-page__section .banner__caption {
     padding-top: 107px;
 }
-.section__title {
+.services-page__section .section__title {
     padding-bottom: 64px;
 }
-.section__heading {
+.services-page__section .section__heading {
     padding-bottom: 8px;
 }
 .slider__content {
@@ -286,11 +287,11 @@
     padding: 61px 47px 61px 40px;
     background-color: white;
 }
-.bottom-banner__caption {
+.services-page__section .bottom-banner__caption {
     color: #E6E8EF;
     padding: 0 0 8px;
 }
-.bottom-banner {
+.services-page__section .bottom-banner {
     background: url(../images/bgimage1.jpg) 50% 50% no-repeat;
     width: 100%;
     height: 785px;
@@ -298,10 +299,10 @@
     top: 0;
     z-index: -1;
 }
-.bottom-banner__content {
+.services-page__section .bottom-banner__content {
     padding: 112px 0 80px;
 }
-.bottom-banner__text {
+.services-page__section .bottom-banner__text {
     color: #EEEFF1;
     font-size: 20px;
     line-height: 28px;
@@ -322,7 +323,7 @@
     .services__content {
         width: 90%;
     }
-    .banner__caption {
+    .services-page__section .banner__caption {
         padding-top: 80px;
     }
     .slider {
@@ -344,10 +345,10 @@
     }
 }
 @media all and (max-width: 1366px) {
-    .banner__title {
+    .services-page__section .banner__title {
         padding-top: 4px;
     }
-    .banner__text {
+    .services-page__section .banner__text {
         width: 90%;
     }
     .slider__content {
@@ -367,7 +368,7 @@
         padding-bottom: 8px;
     }
     .slider__item__text {
-        font-family: Rubik, sans-serif;
+        font-family: 'Rubik', sans-serif;
         font-weight: 400;
         font-size: 12px;
         line-height: 16px;
@@ -418,16 +419,16 @@
     }
 }
 @media all and (max-width: 960px) {
-    .banner {
+    .services-page__section .banner {
         height: 584px;
     }
-    .banner__text {
-        padding-bottom: 80px;
+    .services-page__section .banner__text {
+        padding-bottom: 50px;
     }
-    .section__title {
+    .services-page__section .section__title {
         padding-bottom: 24px;
     }
-    .services__content {
+    .services-page__section .services__content {
         text-align: center;
         padding: 80px 0 0;
         width: 100%;
@@ -437,7 +438,7 @@
         margin: 16px auto 0;
     }
     .services__item__title {
-        font-family: Rubik, sans-serif;
+        font-family: 'Rubik', sans-serif;
         font-weight: 500;
         font-size: 12px;
         line-height: 14px;
@@ -469,7 +470,7 @@
     }
     .services-list__text {
         padding-bottom: 24px;
-        font-family: Rubik, sans-serif;
+        font-family: 'Rubik', sans-serif;
         font-weight: 400;
         font-size: 14px;
         line-height: 20px;
@@ -477,7 +478,7 @@
     .services-list__icon-caption {
         padding-bottom: 16px;
         width: 186px;
-        font-family: Rubik, sans-serif;
+        font-family: 'Rubik', sans-serif;
         font-weight: 400;
         font-size: 14px;
         line-height: 20px;
@@ -494,13 +495,13 @@
     .services-list .link-caption {
         padding: 26px 0 0;
         flex: 0 0 186px;
-        font-family: Roboto, sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 400;
         font-size: 12px;
         line-height: 14px;
     }
     .services-list .link {
-        font-family: Roboto, sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 500;
         color: #1E74EC;
         font-size: 14px;
@@ -531,7 +532,7 @@
         padding: 4px 3px;
     }
     .additional__item__caption {
-        font-family: Rubik, sans-serif;
+        font-family: 'Rubik', sans-serif;
         font-weight: 400;
         font-size: 14px;
         line-height: 20px;
@@ -539,7 +540,7 @@
     .additional__item {
         margin-bottom: 16px;
     }
-    .bottom-banner__content {
+    .services-page__section .bottom-banner__content {
         padding: 40px 0 94px;
     }
     .additional__container .section__title {
@@ -547,12 +548,12 @@
     }
 }
 @media all and (max-width: 533px) {
-    .bottom-banner {
+    .services-page__section .bottom-banner {
         height: 198px;
         background: url(../images/bgimage2.jpg);
         background-size: cover;
     }
-    .bottom-banner__text {
+    .services-page__section .bottom-banner__text {
         display: none;
     }
     .services-list {
@@ -578,7 +579,7 @@
     .services-list .link-caption {
         flex-basis: 150px;
     }
-    .banner__text {
+    .services-page__section .banner__text {
         padding-bottom: 30px;
     }
 }

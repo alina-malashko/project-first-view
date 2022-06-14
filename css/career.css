@@ -1,26 +1,27 @@
-.banner {
+/*Стили для career*/
+.banner.career-page__section {
     background: url(../images/unsplash_4H9IuFBIpYM.jpg) 50% 50% no-repeat;
     width: 100%;
     height: 660px;
 }
-.banner__title {
+.banner__title.career-page__section {
     padding: 120px 0 16px;
 }
-.banner__text {
+.banner__text.career-page__section {
     padding-bottom: 64px;
 }
-.main {
+.career {
     margin: 180px auto 175px;
     width: 1188px;
 }
-.accordion-item {
+.career .accordion-item {
     width: 100%;
     border-bottom: 2px solid #DDDDE2;
 }
-.accordion-item:hover {
+.career .accordion-item:hover {
     border-color: #79077B;
 }
-.accordion {
+.career .accordion {
     font-size: 26px;
     line-height: 32px;
     color: #535670;
@@ -32,18 +33,18 @@
     font-family: gotham, sans-serif;
     cursor: pointer;
 }
-.accordion::after {
+.career .accordion::after {
     content: '\3009';
     font-size: 38px;
     color: #79077B;
     float: right;
     margin-right: 26px;
 }
-.active::after {
+.career .active::after {
     transform: rotate(90deg);
     transform-origin: left bottom;
 }
-.panel {
+.career .panel {
     color: #535670;
     font-size: 18px;
     line-height: 22px;
@@ -55,46 +56,6 @@
     box-sizing: border-box;
     display: none;
 }
-.section__text {
-    padding-bottom: 36px;
-    font-size: 20px;
-    line-height: 28px;
-    width: 821px;
-    color: #535670;
-}
-.bottom-banner {
-    background: url(../images/unsplash_505eectW54k.jpg) 50% 50% no-repeat;
-    width: 100%;
-    height: 785px;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-}
-.bottom-banner__content {
-    padding: 112px 0 80px;
-}
-.bottom-banner__text {
-    color: #EEEFF1;
-    font-size: 20px;
-    line-height: 28px;
-    padding-top: 24px;
-}
-.bottom-banner__caption {
-    padding-bottom: 10px;
-}
-.button-note {
-    display: inline-block;
-    font-size: 11px;
-    line-height: 14px;
-    font-family: Roboto, sans-serif;
-    font-weight: 400;
-    width: 186px;
-    margin: 8px 0 0 14px;
-    color: #989AA9;
-}
-.button_move-right {
-    float: left;
-}
 .note-block {
     display: inline-block;
     background-color: #E6E8EF;
@@ -105,7 +66,7 @@
     color: #989AA9;
     transition: all 200ms ease-out;
 }
-.accordion-panel__title {
+.career .accordion-panel__title {
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
@@ -113,144 +74,187 @@
     color: #35417F;
     padding-bottom: 10px;
 }
-.panel .note-block {
+.career .panel .note-block {
     margin-bottom: 40px;
 }
-.panel ul {
+.career .panel ul {
     list-style-image: url(../images/Ellipse74.png);
     padding: 0 10px 40px 0;
 }
-.panel li {
+.career .panel li {
     color: #535670;
     padding-left: 15px;
     font-size: 18px;
     line-height: 22px;
     padding-bottom: 10px;
 }
-.links-container a {
+.career .links-container a {
     margin-right: 20px;
     display: inline-block;
     width: 32px;
     height: 32px;
 }
-.links-container a:hover {
+.career .links-container a:hover {
     transform: scale(1.1);
 }
-.links-container a:active {
+.career .links-container a:active {
     transform: scale(1);
 }
+.career .section__text {
+    padding-bottom: 36px;
+    font-size: 20px;
+    line-height: 28px;
+    width: 821px;
+    color: #535670;
+}
+.bottom-banner.career-page__section {
+    background: url(../images/unsplash_505eectW54k.jpg) 50% 50% no-repeat;
+    width: 100%;
+    height: 785px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.bottom-banner__content.career-page__section {
+    padding: 112px 0 80px;
+}
+.bottom-banner__text.career-page__section {
+    color: #EEEFF1;
+    font-size: 20px;
+    line-height: 28px;
+    padding-top: 24px;
+}
+.bottom-banner__caption.career-page__section {
+    padding-bottom: 10px;
+}
+.button-note.career-page__section {
+    display: inline-block;
+    font-size: 11px;
+    line-height: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    width: 186px;
+    margin: 8px 0 0 14px;
+    color: #989AA9;
+}
+.button_move-right.career-page__section {
+    float: left;
+}
 @media all and (max-width: 1260px) {
-    .main {
+    .career {
         width: 90%;
     }
 }
 @media all and (max-width: 960px) {
-    .main {
+    .career {
         margin: 80px auto;
     }
-    .section__text {
+    .career .section__text {
         width: 100%;
     }
-    .section__title {
+    .career .section__title {
         padding-bottom: 16px;
     }
-    .accordion {
+    .career .accordion {
         padding: 26px 0;
     }
-    .accordion::after {
+    .career .accordion::after {
         font-size: 30px;
     }
 }
 @media all and (max-width: 850px) {
-    .accordion > .note-block {
+    .career .accordion > .note-block {
         display: none;
     }
-    .section__text {
-        font-family: Rubik, sans-serif;
+    .career .section__text {
+        font-family: 'Rubik', sans-serif;
         font-weight: 400;
         font-size: 14px;
         line-height: 20px;
     }
-    .accordion {
+    .career .accordion {
         font-weight: bold;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 16px;
     }
-    .accordion::after {
+    .career .accordion::after {
         font-size: 14px;
     }
-    .accordion-panel__title {
-        font-family: Rubik, sans-serif;
+    .career .accordion-panel__title {
+        font-family: 'Rubik', sans-serif;
         font-weight: 500;
         font-size: 12px;
         line-height: 14px;
         padding-bottom: 8px;
     }
-    .panel .note-block {
+    .career .panel .note-block {
         margin-bottom: 8px;
     }
     .note-block_wrapper {
         margin-bottom: 16px;
     }
-    .panel ul {
+    .career .panel ul {
         padding: 0 0 24px 0;
         margin-left: 15px;
     }
-    .panel li {
+    .career .panel li {
         color: #75788D;
         padding-left: 0px;
-        font-family: Rubik, sans-serif;
+        font-family: 'Rubik', sans-serif;
         font-weight: 400;
         font-size: 12px;
         line-height: 16px;
         padding-bottom: 8px;
     }
-    .panel {
+    .career .panel {
         padding: 0 16px 16px 0;
     }
-    .banner__title {
+    .banner__title.career-page__section {
         padding-top: 80px;
     }
-    .banner__text {
+    .banner__text.career-page__section {
         padding-bottom: 80px;
         width: 90%;
     }
-    .banner {
-        height: 436px;
+    .banner.career-page__section {
+        height: 496px;
     }
-    .bottom-banner__content {
+    .bottom-banner__content.career-page__section {
         padding: 40px 0 64px;
     }
 }
 @media all and (max-width: 533px) {
-    .your-project-form {
+    .banner.career-page__section {
+        height: 436px;
+    }
+    .your-project-form.career-page__section {
         padding-top: 262px;
     }
-    .bottom-banner__text {
-        font-family: Rubik, sans-serif;
+    .bottom-banner__text.career-page__section {
+        font-family: 'Rubik', sans-serif;
         font-weight: 400;
         font-size: 14px;
         line-height: 20px;
     }
 }
 @media all and (max-width: 400px) {
-    .button_move-right {
+    .button_move-right.career-page__section {
         float: right;
     }
-    .button-note {
+    .button-note.career-page__section {
         margin-left: 0;
         width: 120px;
     }
 }
 @media all and (max-width: 375px) {
-    .links-container {
+    .career .links-container {
         display: none;
     }
-    .bottom-banner {
+    .bottom-banner.career-page__section {
         background: url(../images/bg6.jpg) 50% 50% no-repeat;
         height: 262px;
     }
-    .accordion::after {
+    .career .accordion::after {
         margin: 0;
     }
 }
