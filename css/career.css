@@ -151,34 +151,25 @@
     }
     .career .section__text {
         width: 100%;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
     }
     .career .section__title {
         padding-bottom: 16px;
     }
     .career .accordion {
         padding: 26px 0;
-    }
-    .career .accordion::after {
-        font-size: 30px;
-    }
-}
-@media all and (max-width: 850px) {
-    .career .accordion > .note-block {
-        display: none;
-    }
-    .career .section__text {
-        font-family: 'Rubik', sans-serif;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 20px;
-    }
-    .career .accordion {
         font-weight: bold;
-        font-size: 12px;
+        font-size: 16px;
         line-height: 16px;
     }
     .career .accordion::after {
-        font-size: 14px;
+        font-size: 22px;
+    }
+    .career .accordion > .note-block {
+        display: none;
     }
     .career .accordion-panel__title {
         font-family: 'Rubik', sans-serif;
@@ -224,6 +215,12 @@
     }
 }
 @media all and (max-width: 533px) {
+    .career .accordion {
+        font-size: 12px;
+    }
+    .career .accordion::after {
+        font-size: 14px;
+    }
     .banner.career-page__section {
         height: 436px;
     }
@@ -237,7 +234,7 @@
         line-height: 20px;
     }
 }
-@media all and (max-width: 400px) {
+@media all and (max-width: 430px) {
     .button_move-right.career-page__section {
         float: right;
     }

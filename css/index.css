@@ -788,7 +788,7 @@
         padding-bottom: 16px;
     }
     .about-us__text {
-        font-family: Rubik, sans-serif;
+        font-family: 'Rubik', sans-serif;
         font-weight: 400;
         font-size: 14px;
         line-height: 20px;
@@ -861,7 +861,7 @@
     }
     .development__steps__text {
         padding-bottom: 0;
-        font-family: Rubik, sans-serif;
+        font-family: 'Rubik', sans-serif;
         font-weight: 400;
         font-size: 12px;
         line-height: 16px;
@@ -904,7 +904,7 @@
         line-height: 22px;
     }
     .gallery__first-line .figcaption__text {
-        font-family: Rubik, sans-serif;
+        font-family: 'Rubik', sans-serif;
         font-weight: 400;
         font-size: 12px;
         line-height: 16px;
@@ -1074,7 +1074,7 @@
         width: 220px;
     }
 }
-@media all and (max-width: 360px) {
+@media all and (max-width: 375px) {
     .stats__caption {
         font-size: 16px;
     }
@@ -1082,6 +1082,6 @@
         font-size: 9px;
     }
     .contacts-form__links a {
-        margin-right: 10px;
+        margin-right: 17px;
     }
 }
