@@ -806,7 +806,7 @@
     .about-us .button {
         background-color: transparent;
         color: #1E74EC;
-        font-family: Roboto, sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 500;
         font-size: 14px;
         line-height: 16.4px;
@@ -937,7 +937,7 @@
         padding-bottom: 16px;
     }
     .advantages__text {
-        font-family: Rubik, sans-serif;
+        font-family: 'Rubik', sans-serif;
         font-weight: 400;
         font-size: 14px;
         line-height: 20px;
@@ -953,7 +953,7 @@
         line-height: 22px;
     }
     .advantages__item__text {
-        font-family: Rubik, sans-serif;
+        font-family: 'Rubik', sans-serif;
         font-weight: 400;
         font-size: 12px;
         line-height: 16px;
@@ -990,7 +990,7 @@
         display: none;
     }
     .contacts-form__form__text {
-        font-family: Rubik, sans-serif;
+        font-family: 'Rubik', sans-serif;
         font-weight: 400;
         font-size: 12px;
         line-height: 16px;
@@ -1014,7 +1014,7 @@
     }
     .contacts-form__text p {
         padding-bottom: 16px;
-        font-family: Rubik, sans-serif;
+        font-family: 'Rubik', sans-serif;
         font-weight: 400;
         font-size: 12px;
         line-height: 16px;
@@ -1024,7 +1024,7 @@
     }
     .contacts-form__adress__item p {
         padding-bottom: 8px;
-        font-family: Rubik, sans-serif;
+        font-family: 'Rubik', sans-serif;
         font-weight: 500;
         font-size: 12px;
         line-height: 14px;
@@ -1051,7 +1051,7 @@
         padding: 17px 0 12px;
     }
     .faq .panel {
-        font-family: Rubik, sans-serif;
+        font-family: 'Rubik', sans-serif;
         font-weight: 400;
         font-size: 12px;
         line-height: 16px;

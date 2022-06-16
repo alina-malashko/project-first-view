@@ -438,7 +438,7 @@ footer .links-icons a:active {
     background-position: -240px 0;
 }
 .label-atol {
-    background-position: -488px 0;
+    background-position: -490px 0;
 }
 .label-mondoro {
     background-position: -736px 0;
@@ -700,15 +700,11 @@ form .button_transparent {
         margin-bottom: 0;
         padding-top: 485px;
     }
-}
-@media all and (max-width: 1190px) {
     .your-project-form__wrapper {
         padding: 64px 0;
         width: 910px;
         margin: auto;
     }
-}
-@media all and (max-width: 1150px) {
     .clients {
         width: 696px;
     }
@@ -1156,8 +1152,6 @@ form .button_transparent {
         width: 120px;
         margin-right: 0;
     }
-}
-@media all and (max-width: 412px) {
     .clients div.clearfix {
         width: 165px;
     }
