@@ -49,16 +49,16 @@ a {
     box-sizing: border-box;
 }
 
-/*Все кнопки кроме тех, что на баннере*/
-section .button {
+/*Все кнопки кроме тех, что на баннерах*/
+section .button, button.button, label.button {
     position: relative;
     overflow: hidden;
     transition: all 500ms ease-in;
 }
-section .button:hover {
+section .button:hover, button.button:hover, label.button:hover {
     transform: scale(1.1);
 }
-section a.button::before {
+section a.button::before, button.button::before, label.button::before {
     content: "";
     background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
     height: 50px;
@@ -68,11 +68,11 @@ section a.button::before {
     left: -75px;
     transform: skewX(-45deg);
 }
-section a.button:hover::before {
+section a.button:hover::before, button.button:hover::before, label.button:hover::before {
     left: 1000px;
     transition: all 1.5s ease-in-out;
 }
-section .button:active {
+section .button:active, button.button:active, label.button:active {
     transform: scale(0.9);
 }
 .button_transparent {
@@ -511,6 +511,14 @@ input::placeholder {
     font-size: 16px;
     line-height: 20px;
     color: #75788D;
+}
+/*Скрываем элемент input[type="file"] для стилизации кнопки в соответствии с макетом*/
+input[type="file"] {
+    display: none;
+}
+button {
+    border: none;
+    font-family: 'gotham', sans-serif;
 }
 textarea {
     font-family: 'gotham',  sans-serif;

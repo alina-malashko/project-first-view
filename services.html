@@ -301,19 +301,17 @@
             </div>
         </div>
         <div class="form-bg">
-            <div class="your-project-form__wrapper">
+            <form class="your-project-form__wrapper">
                 <div class="your-project-form__block">
                     <div class="your-project-form__content">
                         <p class="your-project-form__headline">Персональная информация</p>
                         <p class="your-project-form__text">Расскажите, как к вам обращаться и как можно связаться с вами</p>
                     </div>
                     <div class="form__container">
-                        <form>
                             <input type="text" name="username" placeholder="Имя*" required>
                             <input type="text" name="company" placeholder="Компания">
                             <input type="email" name="email" placeholder="Электронная почта*" required>
                             <input type="tel" name="tel" placeholder="Телефон*" required>
-                        </form>
                     </div>
                 </div>
                 <div class="your-project-form__block">
@@ -322,11 +320,10 @@
                         <p class="your-project-form__text">Загрузите сюда свое ТЗ и / или оформите бриф</p>
                     </div>
                     <div class="form__container">
-                        <form>
                             <div class="button-note">Оформление брифа может занять 15-25 минут</div>
-                            <a href="#" title="Оформить бриф" class="button button_transparent button_move-right">Оформить бриф</a>
+                            <label class="button button_transparent button_move-right" for="file">Оформить бриф</label>
+                            <input type="file" name="file" id="file">
                             <input type="text" name="link" placeholder="Ссылка на Техническое задание">
-                        </form>
                     </div>
                 </div>
                 <div class="your-project-form__block">
@@ -334,9 +331,7 @@
                         <p class="your-project-form__headline">О проекте</p>
                     </div>
                     <div class="form__container">
-                        <form>
                             <textarea placeholder="Что бы Вы хотели рассказать еще о своем проекте" name="textarea"></textarea>
-                        </form>
                         <div class="your-project-form__policy__container">
                             <p class="your-project-form__policy">
                                 Нажимая на кнопку, вы соглашаетесь с <a href="#" title="Политика конфидециальности" class="policy-link" target="_blank">Политикой конфидециальности</a>
@@ -347,10 +342,10 @@
                 <div class="your-project-form__block">
                     <div class="your-project-form__buttons-wrap">
                         <p class="your-project-form__note">обязательные поля для заполнения</p>
-                        <a href="#" title="Подать заявку" class="button">Подать заявку</a>
+                        <button name="to-send" class="button">Подать заявку</button>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     </section>
 </div>
