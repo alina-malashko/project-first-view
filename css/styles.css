@@ -1689,6 +1689,16 @@ form .button_transparent {
     display: inline-block;
     width: 32px;
     height: 32px;
+    background: url(../images/social3.svg) 0 0 no-repeat;
+}
+.career .links-container a:nth-child(2) {
+    background-position: -56px 0;
+}
+.career .links-container a:nth-child(3) {
+    background-position: -112px 0;
+}
+.career .links-container a:nth-child(4) {
+    background-position: -168px 0;
 }
 .career .links-container a:hover {
     transform: scale(1.1);
