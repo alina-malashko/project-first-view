@@ -373,7 +373,7 @@ footer {
     display: block;
     flex: 0 0 32px;
     height: 32px;
-    background: url(../images/social.png) no-repeat;
+    background: url(../images/social2.svg) no-repeat;
 }
 .links-icons .linkedin {
     background-position: 0 0;
@@ -1074,7 +1074,7 @@ form .button_transparent {
     width: 32px;
     height: 32px;
     margin-right: 40px;
-    background: url(../images/social.png) 0 0 no-repeat;
+    background: url(../images/social2.svg) 0 0 no-repeat;
 }
 .contacts-form__links a:nth-child(2) {
     background-position: -72px 0;

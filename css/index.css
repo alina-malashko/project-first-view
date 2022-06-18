@@ -361,7 +361,7 @@
     width: 32px;
     height: 32px;
     margin-right: 40px;
-    background: url(../images/social.png) 0 0 no-repeat;
+    background: url(../images/social2.svg) 0 0 no-repeat;
 }
 .contacts-form__links a:nth-child(2) {
     background-position: -72px 0;
