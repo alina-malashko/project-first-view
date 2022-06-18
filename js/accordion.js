@@ -1,12 +1,11 @@
 var acc = document.querySelectorAll(".accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
+/*i позволяет перебрать все элементы массива*/
+for (var i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
-        /* Переключение между добавлением и удалением класса active */
+        /* При клике на div с классом accordion происходит переключение между добавлением и удалением класса active */
         this.classList.toggle("active");
 
-        /* Скрытие и отображение активной панели */
+        /* Скрытие и отображение панели с ответом (сестринский элемент для div.accordion) */
         var panel = this.nextElementSibling;
         if (panel.style.display === "block") {
             panel.style.display = "none";
@@ -17,7 +16,7 @@ for (i = 0; i < acc.length; i++) {
 }
 
 /*Медленное раскрытие панели с ответом*/
-for (i = 0; i < acc.length; i++) {
+for (var i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active_open-slowly");
     var panel = this.nextElementSibling;
