@@ -652,8 +652,35 @@ form .button_transparent {
 }
 .button-note {
     display: none;
-} 
-
+}
+.shadow {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 101;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.shadow_open {
+    display: block;
+}
+.modal {
+    display: none;
+    background-color: white;
+    width: 280px;
+    height: 326px;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 102;
+    transform: translate(-50%, -50%);
+}
+.modal_open {
+    display: block;
+}
 /*Стили для index*/
 .banner.main-page__section {
     background: url(../images/bg1.jpg) 50% 50% no-repeat;
@@ -1120,7 +1147,7 @@ form .button_transparent {
     right: 30px;
 }
 .faq__wrapper .active::after {
-    transform: rotate(45deg);
+    transform: rotate(45deg); /*При нажатии на контейнер с вопросом "+" разворачивается на 45 градусов*/
 }
 .faq__wrapper .panel {
     color: #75788D;

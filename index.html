@@ -307,7 +307,7 @@
                     <div class="contacts-form__form__bottom">
                         <div class="contacts-form__form__buttons-wrap">
                             <p class="contacts-form__form__note">обязательные поля для заполнения</p>
-                            <button name="to-send" class="button">Отправить</button>
+                            <button name="to-send" class="button" onclick="openModalWindow();">Отправить</button>
                         </div>
                         <p class="contacts-form__form__policy">
                             Нажимая на кнопку, вы соглашаетесь с <a href="#" title="Политика конфидециальности" target="_blank" class="policy-link">Политикой конфидециальности</a>
@@ -421,7 +421,15 @@
             </div>
         </div>
     </footer>
+    <div class="shadow" id="shadow"></div>
+    <div class="modal" id="modal">
+        <img src="images/group431.png" alt="modal-pic" title="Ваша заявка отправлена">
+        <p>Ваша заявка сформирована и отправлена нашему менеджеру</p>
+        <a href="javascript:closeModalWindow();" title="Вернуться на сайт">Вернуться на сайт</a>
+        <a href="javascript:closeModalWindow();" title="Отмена">Отмена</a>
+    </div>
 <script src="js/accordion.js"></script>
 <script src="js/menu.js"></script>
+<script src="js/modal.js"></script>
 </body>
 </html>

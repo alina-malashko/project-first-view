@@ -1,13 +1,12 @@
-var acc = document.getElementsByClassName("accordion");
+var acc = document.querySelectorAll(".accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
-        /* Toggle between adding and removing the "active" class,
-        to highlight the button that controls the panel */
+        /* Переключение между добавлением и удалением класса active */
         this.classList.toggle("active");
 
-        /* Toggle between hiding and showing the active panel */
+        /* Скрытие и отображение активной панели */
         var panel = this.nextElementSibling;
         if (panel.style.display === "block") {
             panel.style.display = "none";
@@ -17,15 +16,15 @@ for (i = 0; i < acc.length; i++) {
     });
 }
 
-
+/*Медленное раскрытие панели с ответом*/
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
-    this.classList.toggle("active1");
+    this.classList.toggle("active_open-slowly");
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight){
       panel.style.maxHeight = null;
     } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
+      panel.style.maxHeight = panel.scrollHeight + "px"; /*max height для панели с ответом становится равной высоте прокрутки*/
     }
   });
 }
