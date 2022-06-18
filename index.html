@@ -297,7 +297,7 @@
                         <a href="https://www.instagram.com/" title="Instagram" target="_blank"></a>
                     </div>
                 </div>
-                <form class="contacts-form__form">
+                <form class="contacts-form__form" onsubmit="openModalWindow();return false;">
                     <h3 class="contacts-form__form__title">Связаться с нами</h3>
                     <p class="contacts-form__form__text">Оставьте свою контактную информацию, и мы с радостью свяжемся с вами!</p>
                         <input type="text" name="username" placeholder="Имя*" required>
@@ -307,7 +307,7 @@
                     <div class="contacts-form__form__bottom">
                         <div class="contacts-form__form__buttons-wrap">
                             <p class="contacts-form__form__note">обязательные поля для заполнения</p>
-                            <button name="to-send" class="button" onclick="openModalWindow();">Отправить</button>
+                            <button name="to-send" class="button">Отправить</button>
                         </div>
                         <p class="contacts-form__form__policy">
                             Нажимая на кнопку, вы соглашаетесь с <a href="#" title="Политика конфидециальности" target="_blank" class="policy-link">Политикой конфидециальности</a>

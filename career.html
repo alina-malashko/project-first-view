@@ -286,7 +286,7 @@
             </div>
         </div>
         <div class="form-bg">
-            <form class="your-project-form__wrapper">
+            <form class="your-project-form__wrapper" onsubmit="openModalWindow();return false;">
                 <div class="your-project-form__block">
                     <div class="your-project-form__content">
                         <p class="your-project-form__headline">Персональная информация</p>
@@ -415,7 +415,15 @@
             </div>
         </div>
     </footer>
+    <div class="shadow" id="shadow"></div>
+    <div class="modal" id="modal">
+        <img src="images/group431.png" alt="modal-pic" title="Ваша заявка отправлена">
+        <p>Ваша заявка сформирована и отправлена нашему менеджеру</p>
+        <a href="javascript:closeModalWindow();" title="Вернуться на сайт">Вернуться на сайт</a>
+        <a href="javascript:closeModalWindow();" title="Отмена">Отмена</a>
+    </div>
     <script src="js/menu.js"></script>
     <script src="js/accordion.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 </html>

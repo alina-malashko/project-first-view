@@ -653,6 +653,7 @@ form .button_transparent {
 .button-note {
     display: none;
 }
+/*Модальное окно*/
 .shadow {
     display: none;
     position: fixed;
@@ -663,6 +664,7 @@ form .button_transparent {
     z-index: 101;
     background-color: rgba(0, 0, 0, 0.6);
 }
+/*Распологается на фоне тени*/
 .shadow_open {
     display: block;
 }
@@ -670,16 +672,44 @@ form .button_transparent {
     display: none;
     background-color: white;
     width: 280px;
-    height: 326px;
     border-radius: 10px;
     position: fixed;
     top: 50%;
     left: 50%;
     z-index: 102;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 .modal_open {
     display: block;
+}
+.modal img {
+    margin: 35px 0 25px;
+}
+.modal p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    width: 220px;
+    margin: 0 auto 36px;
+    color: #35417F;
+}
+.modal a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #1E74EC;
+    display: block;
+    text-align: right;
+    padding: 0 24px 28px;
+}
+.modal a:hover {
+    color: #79077B;
+}
+.modal a:active {
+    color: red;
 }
 /*Стили для index*/
 .banner.main-page__section {
