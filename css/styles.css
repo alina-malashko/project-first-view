@@ -3459,7 +3459,7 @@ form .button_transparent {
     .team-page .img-container {
         width: 100%;
     }
-    .team-page .img-container img:first-child {
+    .team-page .img-container > img {
         width: 100%;
         object-fit: cover;
         height: 330px;
